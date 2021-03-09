@@ -3,7 +3,7 @@
 usage: simple-server.py [-m] [-p]
 
 -m, --mode 	http or https (default: http)
--p, --port  	port number
+-p, --port  	port number (default: 8080)
 ```
 you can generate your own server.pem with the following command:
 ```
