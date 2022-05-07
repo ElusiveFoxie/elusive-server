@@ -1,4 +1,4 @@
-# simple-server 2.0 by ElusiveFox
+# elusive-server 2.0 by ElusiveFox
 ```
 usage: elusive-server.py [-h] [-m MODE] [-p PORT] [-rh RESPONSE_HEADER] [-rhf RESPONSE_HEADERS_FILE]
 
