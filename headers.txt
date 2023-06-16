@@ -1,4 +1,4 @@
-Access-Control-Allow-Origin: https://evil.com
-Access-Control-Allow-Methods: GET, OPTIONS
+Access-Control-Allow-Origin: null
+Access-Control-Allow-Methods: GET, OPTIONS, POST
 Access-Control-Allow-Headers: *
 Access-Control-Credentials: true
