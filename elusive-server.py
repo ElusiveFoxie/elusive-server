@@ -49,12 +49,19 @@ if __name__ == '__main__':
             for key, value in headers.items():
                 self.send_header(key, value)
             http.server.SimpleHTTPRequestHandler.end_headers(self)
+            
         def do_POST(self):
             self.send_response(200)
             content_length = int(self.headers['Content-Length'])
             post_data = self.rfile.read(content_length)
-            print(f"{self.client_address[0]} - - [{self.log_date_time_string()}] \"POST {self.path} {self.request_version}\" 200 -")
             print(post_data)
+            self.end_headers()
+        
+        def do_OPTIONS(self):
+            self.send_response(200)
+            self.send_header("Content-type", "text/html")
+            self.end_headers()
+            
     try:
         MODE = args.mode
         PORT = int(args.port)
